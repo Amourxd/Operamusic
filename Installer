@@ -19,6 +19,8 @@ requests
 spotipy
 tgcrypto
 numpy
+httpx
+pillow==9.5.0
 git+https://github.com/adityaxserver/downloader
 git+https://github.com/Kaal-xD/kaal-search
 git+https://github.com/Kaal-xD/kaal-speed-test
