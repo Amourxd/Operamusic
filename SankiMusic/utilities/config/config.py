@@ -9,11 +9,11 @@ from pyrogram import filters
 if os.path.exists("Internal"):
   load_dotenv("Internal")
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("API_ID", "16038768"))
+API_HASH = getenv("API_HASH", "443293da0054e69a4c1b12c6f36a4dd9")
+BOT_TOKEN = getenv("BOT_TOKEN", "5424479921:AAEwYtdKNmmQT2etNhEfpr64D5SrQR5XpII")
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
-MONGO_DB_URL = getenv("MONGO_DB_URL", None)
+MONGO_DB_URL = getenv("MONGO_DB_URL", "mongodb+srv://royal143prince:royal143prince@cluster0.fvoksiz.mongodb.net/?retryWrites=true&w=majority")
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001733900890"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "𝐀ʀռǟʋ ✘ 𝐌ʋsɩƈ")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5157056683").split()))
@@ -43,7 +43,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQCQy-lzYP0Ooet4H6PvggpTvMT0uJ8yC_nx8dB0y-W9RHswiNJuJJGU52Xn2bBrxhxDjAfusqN6Vu3jjMlzyTtXSDZ_0aCxpcnyAUFo0JMArW9iCEgP22AwWC73Q_xMaHpymZMq4HG8MK5ZkZpnL07dGrL7kNJvMgO8DXMfUxHWasqPHtiZzJ8Jph7CFRVBhXNpDZL4E6PjIWWRaHBtX6fH26xyFf4VdmBk__cd8QM0skzGf-KYCY-8LScus-cIGCP1DBY2vS3jDFMuqkOpf4LYeTGlkaqgDTxnej5LqnKrOhvfKeyjcOuNA63Fb5llLnWiKOnVi27PmWJA5V9THNByAAAAAUqpceMA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
