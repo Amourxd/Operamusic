@@ -1,43 +1,74 @@
 {
-    "name": "Arnav Music Bot",
-    "description": "Telegram bot for Streaming  Music trought the Telegram Group Video Chat, powered by pytgcalls and pyrogram",
-    "logo": "https://telegra.ph/file/061aefa9469ea5dfb9a19.jpg",
+    "name": "ARNAVMUSIC",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/41591633c4de4340c033d.jpg",
     "keywords": [
-        "pytgcalls",
-        "telegram bot",
-        "pyrogram"
+    "python3",
+    "telegram",
+    "pytgcalls",
+    "bot",
+    "AloneX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
     ],
-    "website": "https://t.me/ilexworld",
-    "repository": "https://github.com/ITZ-NIRJON/ExportMusic",
-    "success_url": "https://t.me/aboutarnav",
     "env": {
-        "ASSISTANT_NAME": {
-            "description": "fill with the assistant username account without @",
-            "required": false
-        },
-        "ALIVE_NAME": {
-            "description": "fill with your telegram account nickname/name",
-            "required": false,
-            "value": "I'm Alive Baby 😂"
-        }
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "5482561033",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app name",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "",
+        "required": true
+      }
     },
-    "addons": [],
     "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "heroku/nodejs"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "eco"
-        }
-    },
-    "stack": "container"
-    }
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
